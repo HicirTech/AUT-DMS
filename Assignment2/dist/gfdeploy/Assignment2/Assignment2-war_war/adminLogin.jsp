@@ -38,7 +38,7 @@
                     user.setAttribute("TIME", date.toString());
                     %>
                     <h1>Login success, welcome admin</h1>
-                     <a href="http://localhost:8080/Assignment2-war/review"><button>admin login </button></a>
+                     <a href="http://localhost:8080/Assignment2-war/adminManage"><button>admin login </button></a>
                 <%}else{%>
                 <h1>login failed, please check your username and password</h1>
                    <%}}

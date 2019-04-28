@@ -15,11 +15,15 @@ import Assignment2.DBCheck;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.ejb.EJB;
 /**
  *
  * @author luoze
  */
 public class signup extends HttpServlet {
+
+    @EJB
+    private DBCheck db;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -101,7 +105,7 @@ public class signup extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet signup at " + request.getContextPath() + "</h1>");
             out.println("<p> signup success? =  "+this.doSignUp(UID, userName, password,userType,String.valueOf(session.getCreationTime())));
-            session.invalidate();
+          //  session.invalidate();
             out.println("<a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
@@ -109,7 +113,6 @@ public class signup extends HttpServlet {
     }
     
     private boolean doSignUp(String UID, String userName, String Password,String userType,String time){
-        DBCheck db = new DBCheck();
         try {
             db.connect();
             if(db.checkHasUser(UID)){

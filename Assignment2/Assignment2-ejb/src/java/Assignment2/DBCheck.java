@@ -81,7 +81,8 @@ public class DBCheck {
                 + "(UID INT PRIMARY KEY, "
                 + "PASS VARCHAR(255),"
                 +" USERNAME VARCHAR(255), "
-                + "TYPE INT)";
+                + "TYPE INT,"
+                + "TIME VARCHAR(255))";
             this.statement.executeUpdate(sql);
             this.connection.commit();
             System.out.println("Table created");
@@ -90,11 +91,16 @@ public class DBCheck {
     public boolean insertNewUser(String UID, String password, String userName,String userType, String time){
        
         try {
-            String sql = "INSERT INTO CHATUSER VALUES ("+Integer.parseInt(UID)+", '"+password+"', '"+userName+"', "+Integer.parseInt(userType)+", '"+time+"')";
+            this.connect();
+            String sql = "INSERT INTO CHATUSER VALUES ("
+                    +Integer.parseInt(UID)+", '"+password+"', '"+userName+"', "+Integer.parseInt(userType)+", '"+time+"')";
             this.statement.executeUpdate(sql);
             this.connection.commit();
             return true;
         } catch (SQLException ex) {
+            Logger.getLogger(DBCheck.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        } catch (ClassNotFoundException ex) {
             Logger.getLogger(DBCheck.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }

@@ -3,14 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/luoze/Documents/NetBeansProjects/Assignment2/Assignment2-war/src/java/review.java</file>
-            <file>file:/C:/Users/luoze/Documents/NetBeansProjects/Assignment2/Assignment2-war/src/java/signup.java</file>
-            <file>file:/C:/Users/luoze/Documents/NetBeansProjects/Assignment2/Assignment2-war/web/adminLogin.jsp</file>
-            <file>file:/C:/Users/luoze/Documents/NetBeansProjects/Assignment2/Assignment2-war/src/java/adminManage.java</file>
-            <file>file:/C:/Users/luoze/Documents/NetBeansProjects/Assignment2/Assignment2-war/src/java/ReviewUser.java</file>
-            <file>file:/C:/Users/luoze/Documents/NetBeansProjects/Assignment2/Assignment2-war/web/index.html</file>
-            <file>file:/C:/Users/luoze/Documents/NetBeansProjects/Assignment2/Assignment2-war/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/luoze/Documents/NetBeansProjects/Assignment2/Assignment2-war/web/userLogin.jsp</file>
+            <file>file:/C:/Users/luoze/Documents/GitHub/AUT-DMS/Assignment2/Assignment2-war/web/adminLogin.jsp</file>
+            <file>file:/C:/Users/luoze/Documents/GitHub/AUT-DMS/Assignment2/Assignment2-war/src/java/adminManage.java</file>
+            <file>file:/C:/Users/luoze/Documents/GitHub/AUT-DMS/Assignment2/Assignment2-war/web/index.html</file>
+            <file>file:/C:/Users/luoze/Documents/GitHub/AUT-DMS/Assignment2/Assignment2-war/src/java/ReviewUser.java</file>
+            <file>file:/C:/Users/luoze/Documents/GitHub/AUT-DMS/Assignment2/Assignment2-war/src/java/signup.java</file>
+            <file>file:/C:/Users/luoze/Documents/GitHub/AUT-DMS/Assignment2/Assignment2-war/web/userLogin.jsp</file>
+            <file>file:/C:/Users/luoze/Documents/GitHub/AUT-DMS/Assignment2/Assignment2-war/web/WEB-INF/web.xml</file>
         </group>
     </open-files>
 </project-private>
