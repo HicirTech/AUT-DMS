@@ -19,14 +19,15 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
+ * this page will allow admin to see a user detail information
  *
- * @author luoze
+ * @author Zeting Luo ID:16938158
  */
 public class reviewUser extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
+     * methods. here will let admin to review a user
      *
      * @param request servlet request
      * @param response servlet response
@@ -35,6 +36,7 @@ public class reviewUser extends HttpServlet {
      */
     @EJB
     DBCheck dbCheck;
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -44,17 +46,17 @@ public class reviewUser extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet DisplayInfo</title>");            
+            out.println("<title>Servlet DisplayInfo</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Admin now is looking at:</h1>");
             dbCheck = new DBCheck();
             ResultSet rs = dbCheck.getUserInfo(userSession.getAttribute("REVIEWER").toString());
-            while(rs.next()){
+            while (rs.next()) {
                 out.println("<p>User ID :" + userSession.getAttribute("REVIEWER"));
-                out.println("<p>User Name:"+ rs.getString("USERNAME"));
-                out.println("<p>User password: "+ rs.getString("PASS"));
-                out.println("<p>User type: "+ rs.getInt("TYPE"));                        
+                out.println("<p>User Name:" + rs.getString("USERNAME"));
+                out.println("<p>User password: " + rs.getString("PASS"));
+                out.println("<p>User type: " + rs.getInt("TYPE"));
             }
             out.println("<br> <br><a href=\"http://localhost:8080/Assignment2-war/adminManage\"><button>Go back to last Page</button></a>");
             out.println("<a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
@@ -65,9 +67,8 @@ public class reviewUser extends HttpServlet {
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
-     * Handles the HTTP <code>GET</code> method.
+     * Handles the HTTP <code>GET</code> method. method not used
      *
      * @param request servlet request
      * @param response servlet response
@@ -81,7 +82,7 @@ public class reviewUser extends HttpServlet {
     }
 
     /**
-     * Handles the HTTP <code>POST</code> method.
+     * Handles the HTTP <code>POST</code> method. method not used
      *
      * @param request servlet request
      * @param response servlet response
@@ -102,6 +103,6 @@ public class reviewUser extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

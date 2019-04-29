@@ -18,6 +18,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.ejb.EJB;
+
 /**
  *
  * @author luoze
@@ -45,7 +46,7 @@ public class signup extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet - New user signup</title>");            
+            out.println("<title>Servlet - New user signup</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet signup at " + request.getContextPath() + "</h1>");
@@ -53,10 +54,10 @@ public class signup extends HttpServlet {
                     + "User ID <input type='Text' min='0' name='UID' required></input>"
                     + "Password <input type='Text' min='0' name='PASSWORD' required></input>"
                     + "User name <input type='Text' min='0' name='USERNAME' required></input>"
-                    +"<select name = 'TYPE'>"
+                    + "<select name = 'TYPE'>"
                     + "<option value=\"1\">administrator</option>"
                     + "<option value=\"0\">chat user</option>"
-                    +"</select>"
+                    + "</select>"
                     + "<button name='' type='submit'>signup</button>"
                     + "</form>");
             out.println("<a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
@@ -92,10 +93,10 @@ public class signup extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         ///processRequest(request, response);
-          HttpSession session = request.getSession(true);
-          response.setContentType("text/html;charset=UTF-8");
-             try (PrintWriter out = response.getWriter()) {
-                 
+        HttpSession session = request.getSession(true);
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+
             String password = request.getParameter("PASSWORD");
             String UID = request.getParameter("UID");
             String userName = request.getParameter("USERNAME");
@@ -103,29 +104,29 @@ public class signup extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet - New user signup</title>");            
+            out.println("<title>Servlet - New user signup</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet signup at " + request.getContextPath() + "</h1>");
-            SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");  
-            Date date = new Date(System.currentTimeMillis()); 
-            out.println("<p> signup success? =  "+this.doSignUp(UID, userName, password,userType,date.toString()));
-          //  session.invalidate();
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
+            Date date = new Date(System.currentTimeMillis());
+            out.println("<p> signup success? =  " + this.doSignUp(UID, userName, password, userType, date.toString()));
+            //  session.invalidate();
             out.println("<a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
         }
     }
-    
-    private boolean doSignUp(String UID, String userName, String Password,String userType,String time){
+
+    private boolean doSignUp(String UID, String userName, String Password, String userType, String time) {
         try {
             db.connect();
-            if(db.checkHasUser(UID)){
-                System.out.println(UID+"already there");
-            }else{
-               db.insertNewUser(UID, Password, userName,userType,time);
-               db.disconnect();
-               return true;
+            if (db.checkHasUser(UID)) {
+                System.out.println(UID + "already there");
+            } else {
+                db.insertNewUser(UID, Password, userName, userType, time);
+                db.disconnect();
+                return true;
             }
             db.disconnect();
         } catch (SQLException ex) {
@@ -133,8 +134,7 @@ public class signup extends HttpServlet {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(signup.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
+
         return false;
     }
 

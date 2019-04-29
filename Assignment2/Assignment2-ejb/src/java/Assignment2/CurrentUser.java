@@ -14,37 +14,39 @@ import javax.ejb.LocalBean;
 import javax.ejb.EJB;
 
 /**
- *
+ *a Stateful bean that contain user information for current user
  * @author luoze
  */
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 @Stateful
 @LocalBean
 public class CurrentUser {
 
     @EJB
     private DBCheck dbCheck;
-    
+
     private String UID;
     private String userName;
     private String password;
     private int userType;
     private String loginTime;
 
-    
-    public CurrentUser(){
-        
-    }
-  
-    public void makeup(String UID,String time){
+    /**
+     * this method will the user id and login time to create a stateful user
+     *
+     * @param UID user id to get user data from
+     * @param time login time for record
+     */
+    public void makeup(String UID, String time) {
         this.UID = UID;
         dbCheck = new DBCheck();
         ResultSet userInfo = dbCheck.getUserInfo(UID);
         System.out.println(userInfo);
 
         try {
-            while(userInfo.next()){
+            while (userInfo.next()) {
                 this.password = userInfo.getString("PASS");
                 this.userName = userInfo.getString("USERNAME");
                 this.userType = userInfo.getInt("TYPE");
@@ -52,10 +54,9 @@ public class CurrentUser {
         } catch (SQLException ex) {
             Logger.getLogger(CurrentUser.class.getName()).log(Level.SEVERE, null, ex);
         }
-        this.loginTime=time;
+        this.loginTime = time;
     }
-    
-    
+
     public String getUID() {
         return UID;
     }
@@ -75,13 +76,9 @@ public class CurrentUser {
     public String getLoginTime() {
         return loginTime;
     }
-    @Override
-    public String toString(){
-        return this.userName;
-    }
-    
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
 
-  
+    @Override
+    public String toString() {
+        return "USER NAME: " + this.userName;
+    }
 }

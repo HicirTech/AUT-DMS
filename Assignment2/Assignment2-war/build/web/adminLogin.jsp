@@ -16,32 +16,32 @@
     </head>
     <body>
         <h1>Admin login to server</h1>
-          <form name="form1" method="POST">
+        <form name="form1" method="POST">
             AdminLogin:<input type="text" name ="adminID">
             password:<input type="text" name="password">
             <input type="submit" name="DBcheck">
             <a href="./index.html"><button type="button">Go Back</button></a>
         </form>
         <%
-              if(request.getParameter("DBcheck") != null)
-              {
+            if (request.getParameter("DBcheck") != null) {
                 DBCheck bean = new DBCheck();
                 bean.connect();
                 String adminId = request.getParameter("adminID");
                 String password = request.getParameter("password");
-                if(bean.checkUserVaild(adminId,password)&&bean.getUserType(adminId)==1)
-                {
+                if (bean.checkUserVaild(adminId, password)
+                        && bean.getUserType(adminId) == 1) {
                     HttpSession user = request.getSession(true);
                     user.setAttribute("UID", request.getParameter("adminID"));
-                    SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");  
-                    Date date = new Date(System.currentTimeMillis()); 
+                    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
+                    Date date = new Date(System.currentTimeMillis());
                     user.setAttribute("TIME", date.toString());
-                    %>
-                    <h1>Login success, welcome admin</h1>
-                     <a href="adminSelection.jsp"><button>admin login </button></a>
-                <%}else{%>
-                <h1>login failed, please check your username, password and your user type</h1>
-                   <%}}
-            %>
+        %>
+        <h1>Login success, welcome admin</h1>
+        <a href="adminSelection.jsp"><button>admin login</button></a>
+        <%} else {%>
+        <h1>login failed, please check your username, password and your user type</h1>
+        <%}
+            }
+        %>
     </body>
 </html>

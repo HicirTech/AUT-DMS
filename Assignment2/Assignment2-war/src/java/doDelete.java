@@ -19,22 +19,25 @@ import javax.servlet.http.HttpSession;
 import org.jboss.weld.context.ejb.Ejb;
 
 /**
+ * this page will let admin to review and delete a user from database
  *
- * @author luoze
+ * @author Zeting Luo ID:16938158
  */
 public class doDelete extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
+     * methods. here handle that the delete require come in let admin to check
+     * last time if he wanto delete the user from database
      *
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-     @Ejb
+    @Ejb
     DBCheck dbCheck;
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -44,39 +47,37 @@ public class doDelete extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet doDelete</title>");            
+            out.println("<title>Servlet doDelete</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet doDelete at " + request.getContextPath() + "</h1>");
             out.println("<h1>Admin now is going to DELETE USER:</h1>");
             dbCheck = new DBCheck();
             ResultSet rs = dbCheck.getUserInfo(userSession.getAttribute("REVIEWER").toString());
-            while(rs.next()){
+            while (rs.next()) {
                 out.println("<p>User ID :" + userSession.getAttribute("REVIEWER"));
-                out.println("<p>User Name:"+ rs.getString("USERNAME"));
-                out.println("<p>User password: "+ rs.getString("PASS"));
-                out.println("<p>User type: "+ rs.getInt("TYPE"));      
-                out.println("<p>User registration time:"+rs.getString("TIME"));
+                out.println("<p>User Name:" + rs.getString("USERNAME"));
+                out.println("<p>User password: " + rs.getString("PASS"));
+                out.println("<p>User type: " + rs.getInt("TYPE"));
+                out.println("<p>User registration time:" + rs.getString("TIME"));
             }
-            
+
             out.println("<form method=\"POST\">");
-            
+
             out.println("<input type=\"submit\" name=\"deleteButton\" value=\"DELETE THIS USER\"></button>");
             out.println("</form>");
-            
-            
+
             out.println("<a href=\"http://localhost:8080/Assignment2-war/DeleteUser\"><button>Go back to last Page</button></a>");
             out.println("<br> <br><a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
         } catch (SQLException ex) {
-             Logger.getLogger(doDelete.class.getName()).log(Level.SEVERE, null, ex);
-         }
+            Logger.getLogger(doDelete.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
-     * Handles the HTTP <code>GET</code> method.
+     * Handles the HTTP <code>GET</code> method. method not use
      *
      * @param request servlet request
      * @param response servlet response
@@ -90,7 +91,8 @@ public class doDelete extends HttpServlet {
     }
 
     /**
-     * Handles the HTTP <code>POST</code> method.
+     * Handles the HTTP <code>POST</code> method. this method will call database
+     * and do delete of the user
      *
      * @param request servlet request
      * @param response servlet response
@@ -100,21 +102,19 @@ public class doDelete extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        if(request.getParameter("deleteButton") != null)
-        {
+
+        if (request.getParameter("deleteButton") != null) {
             HttpSession userSession = request.getSession();
             try (PrintWriter out = response.getWriter()) {
                 String deleteID = userSession.getAttribute("REVIEWER").toString();
-                out.println("<h1>User ID: "+deleteID+" has been deleted? = "+dbCheck.deleteUser(deleteID));
+                out.println("<h1>User ID: " + deleteID + " has been deleted? = " + dbCheck.deleteUser(deleteID));
                 out.println("<a href=\"http://localhost:8080/Assignment2-war/DeleteUser\"><button>Go back to last Page</button></a>");
                 out.println("<br> <br><a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
             }
-        }else
-        {
+        } else {
             processRequest(request, response);
         }
-        
+
     }
 
     /**
