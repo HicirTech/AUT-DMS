@@ -23,9 +23,9 @@
             <p>what would you want to do?</p>
             <form method="GET" action="http://localhost:8080/Assignment2-war/adminManage">
                 <button name='' type='submit'>review a user</button></form>
-            <form method="GET" action="http://localhost:8080/Assignment2-war/DeleteUser">
-            <button name='' type='submit'>Delete a user</button>
-            <a href="http://localhost:8080/Assignment2-war/"><button>Go back to home page</button></form>   
+             <form method="POST" action="http://localhost:8080/Assignment2-war/adminManage">
+            <button name='' type='submit'>Delete a user</button></form>   
+            <a href="http://localhost:8080/Assignment2-war/"><button>Go back to home page</button>
 
     </body>
 </html>

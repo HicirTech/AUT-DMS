@@ -120,6 +120,20 @@ public class DBCheck {
             return null;
         }
     }
+    public int getUserType(String UID){
+        try {
+            this.connect();
+            String sql = "SELECT TYPE FROM CHATUSER WHERE UID = "+UID;
+            ResultSet returning = this.statement.executeQuery(sql);
+            while(returning.next()){
+                return returning.getInt("TYPE");
+            }
+            return -1;
+        } catch (SQLException | ClassNotFoundException ex) {
+            Logger.getLogger(DBCheck.class.getName()).log(Level.SEVERE, null, ex);
+            return -1;
+        }
+    }
     
     public boolean deleteUser(String UID){
         try {

@@ -29,7 +29,7 @@
                 bean.connect();
                 String adminId = request.getParameter("adminID");
                 String password = request.getParameter("password");
-                if(bean.checkUserVaild(adminId,password))
+                if(bean.checkUserVaild(adminId,password)&&bean.getUserType(adminId)==1)
                 {
                     HttpSession user = request.getSession(true);
                     user.setAttribute("UID", request.getParameter("adminID"));
@@ -40,7 +40,7 @@
                     <h1>Login success, welcome admin</h1>
                      <a href="adminSelection.jsp"><button>admin login </button></a>
                 <%}else{%>
-                <h1>login failed, please check your username and password</h1>
+                <h1>login failed, please check your username, password and your user type</h1>
                    <%}}
             %>
     </body>

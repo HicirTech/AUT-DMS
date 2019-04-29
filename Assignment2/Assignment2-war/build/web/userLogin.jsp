@@ -4,6 +4,9 @@
     Author     : luoze
 --%>
 
+<%@page import="java.util.Date"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="Assignment2.DBCheck"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,7 +19,27 @@
            <h1>userlogin login to server</h1>
            userLogin<input type="text" name ="userID">
            password:<input type="text" name="password">
-           <input type="submit" name="addToDB">
-           <a href="./index.html"><button type="button">Go Back</button></a>
+           <input type="submit" name="DBcheck">
+           <a href="./index.html"><button type="button">Go Back</button></a> </form>
+           
+           <%if(request.getParameter("DBcheck") != null)
+            {
+              DBCheck bean = new DBCheck();
+              bean.connect();
+              String UID = request.getParameter("userID");
+              String password = request.getParameter("password");
+              if(bean.checkUserVaild(UID,password)){
+                  HttpSession user = request.getSession(true);
+                  user.setAttribute("UID", request.getParameter("userID"));
+                  SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");  
+                  Date date = new Date(System.currentTimeMillis()); 
+                  user.setAttribute("TIME", date.toString());
+                  %>
+                  <h1>Login success, welcome back</h1>
+                   <a href="adminSelection.jsp"><button>Chat login </button></a>
+              <%}else{%>
+              <h1>login failed, please check your username, password and your user type</h1>
+                 <%}}
+          %>
     </body>
 </html>
