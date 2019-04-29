@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import Assignment2.DBCheck;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.ejb.EJB;
@@ -49,14 +51,15 @@ public class signup extends HttpServlet {
             out.println("<h1>Servlet signup at " + request.getContextPath() + "</h1>");
             out.println("<form method=\"POST\"'>"
                     + "User ID <input type='Text' min='0' name='UID' required></input>"
-                    + "User name <input type='Text' min='0' name='USERNAME' required></input>"
                     + "Password <input type='Text' min='0' name='PASSWORD' required></input>"
+                    + "User name <input type='Text' min='0' name='USERNAME' required></input>"
                     +"<select name = 'TYPE'>"
                     + "<option value=\"1\">administrator</option>"
                     + "<option value=\"0\">chat user</option>"
                     +"</select>"
                     + "<button name='' type='submit'>signup</button>"
                     + "</form>");
+            out.println("<a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -104,7 +107,9 @@ public class signup extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet signup at " + request.getContextPath() + "</h1>");
-            out.println("<p> signup success? =  "+this.doSignUp(UID, userName, password,userType,String.valueOf(session.getCreationTime())));
+            SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");  
+            Date date = new Date(System.currentTimeMillis()); 
+            out.println("<p> signup success? =  "+this.doSignUp(UID, userName, password,userType,date.toString()));
           //  session.invalidate();
             out.println("<a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
             out.println("</body>");

@@ -43,13 +43,17 @@ public class DBCheck {
     }
   
     public boolean checkUserVaild(String userID,String password){
+       
         String sql = "SELECT PASS FROM CHATUSER WHERE UID = "+Integer.parseInt(userID);
         try {
+            this.connect();
             resultSet = statement.executeQuery(sql);
             while(resultSet.next()){
                return resultSet.getString(1).toString().equals(password);
             }
         } catch (SQLException ex) {
+            Logger.getLogger(DBCheck.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
             Logger.getLogger(DBCheck.class.getName()).log(Level.SEVERE, null, ex);
         }
 
@@ -115,6 +119,21 @@ public class DBCheck {
             Logger.getLogger(DBCheck.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
+    }
+    
+    public boolean deleteUser(String UID){
+        try {
+            this.connect();
+            String sql = "DELETE FROM CHATUSER WHERE UID = "+UID;
+            this.statement.execute(sql);
+            this.connection.commit();
+            return true;
+        } catch (SQLException ex) {
+            Logger.getLogger(DBCheck.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(DBCheck.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
     }
     public void disconnect(){
         try {

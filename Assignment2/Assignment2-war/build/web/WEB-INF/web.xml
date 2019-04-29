@@ -6,7 +6,7 @@
     </servlet>
     <servlet>
         <servlet-name>DisplayInfo</servlet-name>
-        <servlet-class>ReviewUser</servlet-class>
+        <servlet-class>reviewUser</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>review</servlet-name>
@@ -15,6 +15,14 @@
     <servlet>
         <servlet-name>adminManage</servlet-name>
         <servlet-class>adminManage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteUser</servlet-name>
+        <servlet-class>deleteUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>doDelete</servlet-name>
+        <servlet-class>doDelete</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>A2</servlet-name>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>adminManage</servlet-name>
         <url-pattern>/adminManage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteUser</servlet-name>
+        <url-pattern>/DeleteUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>doDelete</servlet-name>
+        <url-pattern>/doDelete</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import Assignment2.CurrentUser;
+
 import Assignment2.DBCheck;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -22,8 +22,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author luoze
  */
-
-public class adminManage extends HttpServlet {
+public class reviewUser extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,28 +33,35 @@ public class adminManage extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    
     @EJB
-    private CurrentUser cu;
-   
-//   private HttpSession userSession = request.getSession();
+    DBCheck dbCheck;
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         HttpSession userSession = request.getSession();
-        cu = new CurrentUser();
-        cu.makeup(userSession.getAttribute("UID").toString(),userSession.getAttribute("TIME").toString());
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet - admin Management page</title>");            
+            out.println("<title>Servlet DisplayInfo</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>admin Management pagePOST</h1>");
+            out.println("<h1>Admin now is looking at:</h1>");
+            dbCheck = new DBCheck();
+            ResultSet rs = dbCheck.getUserInfo(userSession.getAttribute("REVIEWER").toString());
+            while(rs.next()){
+                out.println("<p>User ID :" + userSession.getAttribute("REVIEWER"));
+                out.println("<p>User Name:"+ rs.getString("USERNAME"));
+                out.println("<p>User password: "+ rs.getString("PASS"));
+                out.println("<p>User type: "+ rs.getInt("TYPE"));                        
+            }
+            out.println("<br> <br><a href=\"http://localhost:8080/Assignment2-war/adminManage\"><button>Go back to last Page</button></a>");
+            out.println("<a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
+        } catch (SQLException ex) {
+            Logger.getLogger(reviewUser.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -71,39 +77,9 @@ public class adminManage extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-          HttpSession userSession = request.getSession();
-          try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet - admin Management page GET Review</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>admin Management page</h1>");
-            out.println("<h1>Please select a user to review</h1>");
-            out.println("<form>");
-            out.println("<select name=\"REVIEW\">");
-            ResultSet rs = new DBCheck().getAllUser();
-            String addon = "";
-              try {
-                  while(rs.next()){
-                      addon+="<option value=" + rs.getString(1).toString()+">"+rs.getString(3).toString()+"</option>";
-                  } } catch (SQLException ex) {
-                  Logger.getLogger(adminManage.class.getName()).log(Level.SEVERE, null, ex);
-              }
-            out.println(addon);
-            out.println("</select>");
-            out.println("<input type=\"submit\" value=\"Select\"></button>");
-            out.println("<input type=\"button\" onclick=\"location.href='http://localhost:8080/Assignment2-war/DisplayInfo\';\" value=\"Review\" />");
-            out.println("</form>");
-            out.println(" <a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
-            userSession.setAttribute("REVIEWER", request.getParameter("REVIEW").toString());
-            out.println("</body>");
-            out.println("</html>");
-        }
+        processRequest(request, response);
     }
-    
+
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -115,8 +91,7 @@ public class adminManage extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            HttpSession userSession = request.getSession();
-            processRequest(request, response);
+        processRequest(request, response);
     }
 
     /**
@@ -128,5 +103,5 @@ public class adminManage extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-    
+
 }
