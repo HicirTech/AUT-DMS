@@ -28,9 +28,9 @@
                      
         %>
         <p>what would you want to do?</p>
-        <form method="GET" action="http://localhost:8080/Assignment2-war/adminManage">
+        <form method="GET" action="http://localhost:8080/Assignment2-R1-war/AdminManage">
             <button name='' type='submit'>review a user</button></form>
-        <form method="POST" action="http://localhost:8080/Assignment2-war/adminManage">
+        <form method="POST" action="http://localhost:8080/Assignment2-R1-war/AdminManage">
             <button name='' type='submit'>Delete a user</button></form>   
         <%   }catch(NullPointerException e){
                        System.out.println("[PASS IS NOT IN THE SESSION,NEW USER]");
@@ -38,6 +38,6 @@
             }else{%>
         <p>hmm??looks like your session is gone? login again plz :)</p>
         <%}%>
-        <br><a href="http://localhost:8080/Assignment2-war/"><button>Go back to home page</button>
+        <br><a href="http://localhost:8080/Assignment2-R1-war/"><button>Go back to home page</button>
     </body>
 </html>
