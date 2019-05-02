@@ -61,7 +61,7 @@ public class SignUp extends HttpServlet {
                     + "</select>"
                     + "<button name='' type='submit'>signup</button>"
                     + "</form>");
-            out.println("<a href=\"http://localhost:8080/Assignment2-war/\"><button>Go back to home page</button></a>");
+            out.println("<a href=\"mainPage.jsp\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -110,7 +110,7 @@ public class SignUp extends HttpServlet {
             out.println("<h1>Server processed your sign request</h1>");
             String display = this.doSignUp(UID, userName, password, userType) ? "Your signup is success" : "Sign up failed, please change your User ID";
             out.println("<p>" + display + "</p>");
-            out.println("<a href=\"http://localhost:8080/Assignment2-R1-war/\"><button>Go back to home page</button></a>");
+            out.println("<a href=\"mainPage.jsp\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
         }

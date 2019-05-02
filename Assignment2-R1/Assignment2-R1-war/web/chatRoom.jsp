@@ -84,7 +84,7 @@
                 %>
             </fieldset>
         </form>
-        <a href="index.html"><button>Home Page</button></a>           
+        <a href="mainPage.jsp"><button>Home Page</button></a>           
         <%--chat display--%>
         <table border="5" style="width:100%">
             <tr>

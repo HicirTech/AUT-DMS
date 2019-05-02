@@ -21,7 +21,7 @@
             User ID: <input type="text" name ="userID">
             password:<input type="text" name="password">
             <input type="submit" name="DBcheck">
-            <a href="./index.html"><button type="button">Go Back</button></a>
+            <a href="mainPage.jsp"><button type="button">Go Back</button></a>
         </form>
         <%
             HttpSession userSession = request.getSession(false);
@@ -66,13 +66,11 @@
         <%}
             }
         } else {
-            out.println(((User) userSession.getAttribute("USER")).toString());
         %>
         <h1> Returning user, no need for login, welcome back</h1>
         <a href="chatRoom.jsp"><button>user chat room login</button></a>
         <%
+                out.println(((User) userSession.getAttribute("USER")).toString());
             }%>
-
-
     </body>
 </html>

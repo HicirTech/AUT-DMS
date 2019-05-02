@@ -21,7 +21,7 @@
             Admin user ID :<input type="text" name ="adminID">
             password:<input type="text" name="password">
             <input type="submit" name="DBcheck">
-            <a href="./index.html"><button type="button">Go Back</button></a>
+            <a href="mainPage.jsp"><button type="button">Go Back</button></a>
         </form>
         <%
             HttpSession userSession = request.getSession();

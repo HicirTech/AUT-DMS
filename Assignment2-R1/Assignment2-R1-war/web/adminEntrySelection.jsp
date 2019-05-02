@@ -38,6 +38,6 @@
         } else {%>
         <p>hmm??looks like your session is gone? login again plz :)</p>
         <%}%>
-        <br><a href="http://localhost:8080/Assignment2-R1-war/"><button>Go back to home page</button>
+        <br><a href="mainPage.jsp"><button>Go back to home page</button>
     </body>
 </html>

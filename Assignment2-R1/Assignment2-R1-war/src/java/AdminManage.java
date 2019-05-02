@@ -84,7 +84,7 @@ public class AdminManage extends HttpServlet {
             out.println("<input type=\"submit\" value=\"Select\"></button>");
             out.println("<input type=\"button\" onclick=\"location.href='http://localhost:8080/Assignment2-R1-war/ReviewUser\';\" value=\"Review\" />");
             out.println("</form>");
-            out.println(" <a href=\"http://localhost:8080/Assignment2-R1-war/\"><button>Go back to home page</button></a>");
+            out.println(" <a href=\"mainPage.jsp\"><button>Go back to home page</button></a>");
             userSession.setAttribute("REVIEWID", request.getParameter("REVIEW").toString());
             out.println("</body>");
             out.println("</html>");
@@ -120,7 +120,7 @@ public class AdminManage extends HttpServlet {
             out.println("<input type=\"submit\" value=\"Select\"></button>");
             out.println("<input type=\"button\" onclick=\"location.href='http://localhost:8080/Assignment2-R1-war/DeleteUser\';\" value=\"Delete\" />");
             out.println("</form>");
-            out.println(" <a href=\"http://localhost:8080/Assignment2-R1-war/\"><button>Go back to home page</button></a>");
+            out.println(" <a href=\"mainPage.jsp\"><button>Go back to home page</button></a>");
             userSession.setAttribute("DELETEID", request.getParameter("REVIEW").toString());
             out.println("</body>");
             out.println("</html>");

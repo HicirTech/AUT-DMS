@@ -63,7 +63,7 @@ public class DeleteUser extends HttpServlet {
             out.println("</form>");
 
             out.println("<a href=\"http://localhost:8080/Assignment2-R1-war/DeleteUser\"><button>Go back to last Page</button></a>");
-            out.println("<br> <br><a href=\"http://localhost:8080/Assignment2-R1-war/\"><button>Go back to home page</button></a>");
+            out.println("<br> <br><a href=\"mainPage.jsp\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
         }    }
@@ -124,7 +124,7 @@ public class DeleteUser extends HttpServlet {
                 //clean up
                 this.DeleteID="";
                 userSession.setAttribute("DELETEID", "");                        
-                out.println("<br> <br><a href=\"http://localhost:8080/Assignment2-R1-war/\"><button>Go back to home page</button></a>");
+                out.println("<br> <br><a href=\"mainPage.jsp\"><button>Go back to home page</button></a>");
             }
         }
     }

@@ -65,7 +65,7 @@ public class ReviewUser extends HttpServlet {
             }
             userSession.setAttribute("REVIEWID", "");
             out.println("<br> <br><a href=\"http://localhost:8080/Assignment2-R1-war/AdminManage\"><button>Go back to last Page</button></a>");
-            out.println("<a href=\"http://localhost:8080/Assignment2-R1-war/\"><button>Go back to home page</button></a>");
+            out.println("<a href=\"mainPage.jsp\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
         } catch (SQLException ex) {
