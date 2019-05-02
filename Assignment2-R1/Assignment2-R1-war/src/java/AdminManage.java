@@ -81,7 +81,7 @@ public class AdminManage extends HttpServlet {
             out.println(getUserSelection());
             out.println("</select>");
             out.println("<input type=\"submit\" value=\"Select\"></button>");
-            out.println("<input type=\"button\" onclick=\"location.href='http://localhost:8080/Assignment2-R1-war/DisplayInfo\';\" value=\"Review\" />");
+            out.println("<input type=\"button\" onclick=\"location.href='http://localhost:8080/Assignment2-R1-war/ReviewUser\';\" value=\"Review\" />");
             out.println("</form>");
             out.println(" <a href=\"http://localhost:8080/Assignment2-R1-war/\"><button>Go back to home page</button></a>");
             userSession.setAttribute("REVIEWID", request.getParameter("REVIEW").toString());

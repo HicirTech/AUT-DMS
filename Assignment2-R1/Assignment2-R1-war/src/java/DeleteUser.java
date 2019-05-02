@@ -5,6 +5,7 @@
  */
 
 import Stateful.User;
+import Stateless.UserDB;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import org.jboss.weld.context.ejb.Ejb;
 
 /**
  *
@@ -23,6 +25,11 @@ import javax.servlet.http.HttpSession;
  */
 public class DeleteUser extends HttpServlet {
 
+    HttpSession userSession;
+    @Ejb
+    UserDB UDB;
+    
+    String DeleteID;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -34,9 +41,10 @@ public class DeleteUser extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        HttpSession userSession = request.getSession();
+
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            DeleteID = request.getSession().getAttribute("DELETEID").toString();
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -44,18 +52,10 @@ public class DeleteUser extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet doDelete at " + request.getContextPath() + "</h1>");
+            userSession = request.getSession();
             User user = (User)userSession.getAttribute("USER");
-            out.println("<h1>Admin"+user.getUserName()+" now is going to DELETE USER:"+request.getSession().getAttribute("DELETEID")+"</h1>");
-            // = new DBCheck();
-           // ResultSet rs = dbCheck.getUserInfo(userSession.getAttribute("REVIEWER").toString());
-//            while (rs.next()) {
-//                out.println("<p>User ID :" + userSession.getAttribute("REVIEWER"));
-//                out.println("<p>User Name:" + rs.getString("USERNAME"));
-//                out.println("<p>User password: " + rs.getString("PASS"));
-//                out.println("<p>User type: " + rs.getInt("TYPE"));
-//                out.println("<p>User registration time:" + rs.getString("TIME"));
-//            }
-
+            out.println("<h1>Admin "+user.getUserName()+" now is going to DELETE USER with ID: ["+DeleteID+"]</h1>");
+            out.println(this.userTableString());
             out.println("<form method=\"POST\">");
 
             out.println("<input type=\"submit\" name=\"deleteButton\" value=\"DELETE THIS USER\"></button>");
@@ -81,6 +81,27 @@ public class DeleteUser extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
     }
+    
+    private String userTableString(){
+         String addon="";
+         try {
+            UDB = new UserDB();
+            ResultSet rs = UDB.getUserInfo(DeleteID);
+            addon ="<table border=\"5\" ><tr>";
+            
+            while (rs.next()) {
+                addon+=("<td>User ID :" +this.DeleteID+"</td>");
+                addon+=("<td>User Name:" + rs.getString("USERNAME")+"</td>");
+                addon+=("<td>User password: " + rs.getString("PASS")+"</td>");
+                addon+=("<td>User type: " + rs.getInt("TYPE")+"</td>");
+                addon+=("<td>User registration time:" + rs.getString("TIME")+"</td>");
+            }
+            addon+="</tr></table>";
+        } catch (SQLException ex) {
+            Logger.getLogger(DeleteUser.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return addon;
+    }
 
     /**
      * Handles the HTTP <code>POST</code> method.
@@ -93,7 +114,18 @@ public class DeleteUser extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        if (request.getParameter("deleteButton") != null) {
+            try (PrintWriter out = response.getWriter()) {
+                UDB = new UserDB();
+                out.println("<p>User ID : "+DeleteID+" delete "+
+                        (UDB.deleteUser(DeleteID)?"Successed":"failed")
+                        +"</p>");
+                //clean up
+                this.DeleteID="";
+                userSession.setAttribute("DELETEID", "");                        
+                out.println("<br> <br><a href=\"http://localhost:8080/Assignment2-R1-war/\"><button>Go back to home page</button></a>");
+            }
+        }
     }
 
     /**

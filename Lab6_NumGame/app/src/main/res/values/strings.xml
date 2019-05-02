@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab6_NumGame</string>
+    <string name="changed_label">DMS Number Game</string>
+    <string name="title">Fun Numbers Game</string>
+    <string name="rule_title">Game\'s Rules</string>
+    <string name="game_rules">Your are shown two numbers.
+    Click on the large number to win 5 points
+    if you clicked on the smaller number, you will lose 5 points
+    so choose carefully</string>
+</resources>

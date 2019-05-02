@@ -12,6 +12,10 @@
         <servlet-name>DeleteUser</servlet-name>
         <servlet-class>DeleteUser</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ReviewUser</servlet-name>
+        <servlet-class>ReviewUser</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SignUp</servlet-name>
         <url-pattern>/SignUp</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>DeleteUser</servlet-name>
         <url-pattern>/DeleteUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReviewUser</servlet-name>
+        <url-pattern>/ReviewUser</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

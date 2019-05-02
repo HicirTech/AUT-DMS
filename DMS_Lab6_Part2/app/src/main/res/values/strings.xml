@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab6_Part2 [Guess Number Game]</string>
+    <string name="welcome_topic">Welcome to the guess number game</string>
+    <string name="start_game_button">Start</string>
+    <string name="rule_intro">Rule of the game</string>
+    <string name="guess_game_role">Guess a number between 0 and 99</string>
+    <string name="input_text_hint">input your number here</string>
+    <string name="guess_button_title">Guess</string>
+</resources>

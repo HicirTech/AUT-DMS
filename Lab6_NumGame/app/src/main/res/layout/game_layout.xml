@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25dp"
+    android:minHeight="25dp">
+    <TextView
+        android:text="@string/title"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTitle"
+        android:textColor="#ffe64a19"
+        android:paddingLeft="5dp" />
+    <TextView
+        android:text="@string/rule_title"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRuleTitle"
+        android:layout_below="@id/textTitle"
+        android:textColor="#ffffeb3b"
+        android:paddingLeft="10dp" />
+    <TextView
+        android:text="@string/game_rules"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRule"
+        android:layout_below="@id/textRuleTitle"
+        android:paddingTop="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="25dp" />
+    <Button
+        android:id="@+id/leftButton"
+        android:text="Left Number"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textRule"
+        android:layout_alignParentLeft="true"
+        android:onClick="leftButtonClicked" />
+    <Button
+        android:id="@+id/rightButton"
+        android:text="Right Number"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textRule"
+        android:layout_alignParentRight="true"
+        android:onClick="rightButtonClicked" />
+    <TextView
+        android:text="Message"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/textMessage"
+        android:layout_below="@id/leftButton"
+        android:paddingTop="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="25dp" />
+    <TextView
+        android:text="Scores:0"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textScores"
+        android:gravity="center"
+        android:layout_below="@id/textMessage"
+        android:paddingTop="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="25dp" />
+</RelativeLayout>
