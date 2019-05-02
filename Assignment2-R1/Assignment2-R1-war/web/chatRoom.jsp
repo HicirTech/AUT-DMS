@@ -1,7 +1,7 @@
 <%-- 
     Document   : chatRoom
     Created on : May 2, 2019, 4:28:34 PM
-    Author     : luoze
+    Author     : Zeting Luo
 --%>
 
 <%@page import="java.util.GregorianCalendar"%>

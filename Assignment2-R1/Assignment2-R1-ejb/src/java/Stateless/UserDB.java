@@ -17,14 +17,16 @@ import javax.ejb.Stateless;
 import javax.ejb.LocalBean;
 
 /**
+ * this is a stateless bean response for connect the user date base
  *
- * @author luoze
+ * @author Zeting Luo ID:16938158
  */
 @Stateless
 @LocalBean
 public class UserDB {
+
     private final String driverURL = "org.apache.derby.jdbc.EmbeddedDriver";
-    private final String dbURL = "jdbc:derby://localhost:1527/Assignment2;"
+    private final String dbURL = "jdbc:derby://localhost:1527/DMSA2ZT;"
             + "create=true;user=dms;password=A218";
     private Statement statement;
     private ResultSet resultSet;

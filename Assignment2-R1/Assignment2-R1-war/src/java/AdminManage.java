@@ -19,13 +19,14 @@ import javax.servlet.http.HttpSession;
 import org.jboss.weld.context.ejb.Ejb;
 
 /**
- *
- * @author luoze
+ * this page is for process admin option
+ * @author Zeting Luo ID : 16938158
  */
 public class AdminManage extends HttpServlet {
 
     @Ejb
     UserDB UDB;
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -43,7 +44,7 @@ public class AdminManage extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet AdminManage</title>");            
+            out.println("<title>Servlet AdminManage</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet AdminManage at " + request.getContextPath() + "</h1>");
@@ -64,7 +65,7 @@ public class AdminManage extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-         HttpSession userSession = request.getSession();
+        HttpSession userSession = request.getSession();
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
@@ -135,6 +136,7 @@ public class AdminManage extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
     private String getUserSelection() {
         UDB = new UserDB();
         ResultSet rs = UDB.getAllUser();

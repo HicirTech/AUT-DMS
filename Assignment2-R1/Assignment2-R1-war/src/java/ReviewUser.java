@@ -20,14 +20,16 @@ import javax.servlet.http.HttpSession;
 import org.jboss.weld.context.ejb.Ejb;
 
 /**
+ * this page will allow admin to review a user
  *
- * @author luoze
+ * @author Zeting Luo ID : 16938158
  */
 public class ReviewUser extends HttpServlet {
 
     @Ejb
     UserDB UDB;
     String reviewID;
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -43,7 +45,7 @@ public class ReviewUser extends HttpServlet {
         HttpSession userSession = request.getSession();
         UDB = new UserDB();
         reviewID = userSession.getAttribute("REVIEWID").toString();
-        User user = (User)userSession.getAttribute("USER");
+        User user = (User) userSession.getAttribute("USER");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
@@ -52,14 +54,14 @@ public class ReviewUser extends HttpServlet {
             out.println("<title>Servlet DisplayInfo</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Admin "+user.getUserName()+" now is looking at:</h1>");
+            out.println("<h1>Admin " + user.getUserName() + " now is looking at:</h1>");
             ResultSet rs = UDB.getUserInfo(this.reviewID);
             while (rs.next()) {
                 out.println("<p>User ID :" + this.reviewID);
                 out.println("<p>User Name:" + rs.getString("USERNAME"));
                 out.println("<p>User password: " + rs.getString("PASS"));
                 out.println("<p>User type: " + rs.getInt("TYPE"));
-                out.println("<p>Registration date time"+rs.getString("TIME"));
+                out.println("<p>Registration date time" + rs.getString("TIME"));
             }
             userSession.setAttribute("REVIEWID", "");
             out.println("<br> <br><a href=\"http://localhost:8080/Assignment2-R1-war/AdminManage\"><button>Go back to last Page</button></a>");

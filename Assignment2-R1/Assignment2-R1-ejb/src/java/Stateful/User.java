@@ -15,8 +15,8 @@ import javax.ejb.Stateful;
 import javax.ejb.LocalBean;
 
 /**
- *
- * @author luoze
+ * a stateful bean for current login user
+ * @author Zeting Luo
  */
 @Stateful
 @LocalBean

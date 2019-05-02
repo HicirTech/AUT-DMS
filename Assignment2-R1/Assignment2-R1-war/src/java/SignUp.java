@@ -20,15 +20,15 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
+ * this will allow sign up for user
  *
- * @author luoze
+ * @author Zeting Luo ID: 16938158
  */
 public class SignUp extends HttpServlet {
 
     @EJB
     UserDB UDB;
-    
-    
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -40,7 +40,7 @@ public class SignUp extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-          HttpSession session = request.getSession(true);
+        HttpSession session = request.getSession(true);
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
@@ -100,7 +100,7 @@ public class SignUp extends HttpServlet {
             String UID = request.getParameter("UID");
             String userName = request.getParameter("USERNAME");
             String userType = request.getParameter("TYPE");
-            
+
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -108,14 +108,15 @@ public class SignUp extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Server processed your sign request</h1>");
-            String display = this.doSignUp(UID, userName, password, userType)?"Your signup is success":"Sign up failed, please change your User ID";
-            out.println("<p>"+display+"</p>");
+            String display = this.doSignUp(UID, userName, password, userType) ? "Your signup is success" : "Sign up failed, please change your User ID";
+            out.println("<p>" + display + "</p>");
             out.println("<a href=\"http://localhost:8080/Assignment2-R1-war/\"><button>Go back to home page</button></a>");
             out.println("</body>");
             out.println("</html>");
         }
     }
-private boolean doSignUp(String UID, String userName, String Password, String userType) {
+
+    private boolean doSignUp(String UID, String userName, String Password, String userType) {
         UDB = new UserDB();
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
         Date date = new Date(System.currentTimeMillis());

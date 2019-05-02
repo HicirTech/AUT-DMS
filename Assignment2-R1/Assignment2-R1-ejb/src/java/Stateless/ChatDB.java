@@ -17,8 +17,9 @@ import javax.ejb.Stateless;
 import javax.ejb.LocalBean;
 
 /**
+ * this is a stateless bean response for connect the user date base
  *
- * @author luoze
+ * @author Zeting Luo ID : 16938158
  */
 @Stateless
 @LocalBean
@@ -27,13 +28,19 @@ public class ChatDB {
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
     private final String driverURL = "org.apache.derby.jdbc.EmbeddedDriver";
-    private final String dbURL = "jdbc:derby://localhost:1527/Assignment2;"
+    private final String dbURL = "jdbc:derby://localhost:1527/DMSA2ZT;"
             + "create=true;user=dms;password=A218";
     private Statement statement;
     private final int lastNRecord = 3;
     private ResultSet resultSet;
     private Connection connection;
 
+    /**
+     * set up connection
+     *
+     * @throws SQLException if happened do check driver
+     * @throws ClassNotFoundException if happened do check driver
+     */
     public void connect() throws SQLException, ClassNotFoundException {
         connection = DriverManager.getConnection(dbURL);
         Class.forName(driverURL);
@@ -68,6 +75,13 @@ public class ChatDB {
         }
     }
 
+    /**
+     * Check last N record of chat see if any repeat chat message FINAL
+     * lastNRecord is on the top of this class
+     *
+     * @param toCheck the message needs to check
+     * @return if any repeat?
+     */
     private boolean lastNRecord(String toCheck) {
         String sql = "SELECT * FROM CHATRECORD ORDER BY CID DESC";
         ResultSet rs;
@@ -91,12 +105,19 @@ public class ChatDB {
         return false;
     }
 
+    /**
+     * insert new chat message into chatDB this will also check lastNRecord
+     *
+     * @param username user name for the record
+     * @param chat chat message going to be insert
+     * @param time the time this happened
+     * @return if success inserted
+     */
     public boolean insertNewChat(String username, String chat, String time) {
 
         if (lastNRecord(chat)) {
             return false;
         } else {
-
             try {
                 this.connect();
                 String sql = "INSERT INTO CHATRECORD "
@@ -115,6 +136,11 @@ public class ChatDB {
         }
     }
 
+    /**
+     * return all info in the chat DB
+     *
+     * @return a result of the chat DB
+     */
     public ResultSet getAllChat() {
         String sql = "SELECT * FROM CHATRECORD ORDER BY CID DESC";
         try {
@@ -126,5 +152,4 @@ public class ChatDB {
             return null;
         }
     }
-
 }

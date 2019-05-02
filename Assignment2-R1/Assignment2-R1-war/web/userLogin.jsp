@@ -1,7 +1,7 @@
 <%-- 
     Document   : userLogin
     Created on : May 2, 2019, 4:01:33 PM
-    Author     : luoze
+    Author     : Zeting Luo
 --%>
 
 <%@page import="Stateful.User"%>

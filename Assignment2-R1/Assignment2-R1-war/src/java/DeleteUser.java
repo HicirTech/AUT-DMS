@@ -20,8 +20,9 @@ import javax.servlet.http.HttpSession;
 import org.jboss.weld.context.ejb.Ejb;
 
 /**
+ * this page will allow admin to delete a user
  *
- * @author luoze
+ * @author Zeting Luo ID : 16938158
  */
 public class DeleteUser extends HttpServlet {
 
