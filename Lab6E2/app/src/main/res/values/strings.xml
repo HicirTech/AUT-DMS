@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">week6E2</string>
+    <string name="welcome">Welcome to guess number game</string>
+    <string name="startgame">Start Game</string>
+    <string name="ruleText">Rule of the game</string>
+    <string name="RuleText">Guess a number between 0 and 99, input it to input text view, after click submit button down below</string>
+    <string name="submitBtnText">Submit</string>
+    <string name="endgameText">congratulations, you get the right number, do you want to try again?</string>
+    <string name="No">no</string>
+    <string name="Yes">yes</string>
+</resources>

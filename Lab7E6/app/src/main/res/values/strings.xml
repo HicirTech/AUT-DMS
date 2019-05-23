@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab7E6</string>
+    <string name="lab7intro">this is the lab 7 E6 send message application</string>
+    <string name="sendBtn">click here to send page</string>
+    <string name="phoneHint">Enter Phone Number here</string>
+    <string name="messageHint">Enter your message here</string>
+</resources>
