@@ -23,20 +23,23 @@ public class GameActivity extends Activity {
     }
 
     public void onSubmitButtonClick(View view){
-        int input =Integer.parseInt(userInput.getText().toString());
+        if(userInput.getText().toString().length()>0) {
+            int input = Integer.parseInt(userInput.getText().toString());
 
-        String hit = (input< this.answer)?
-                "too low":(input>this.answer)?
-                    "too high":"correct";
+            String hit = (input < this.answer) ?
+                    "too low , try again" : (input > this.answer) ?
+                    "too high , try again" : "correct";
 
 
-        Toast.makeText(this.getApplicationContext(),"answer is "+this.answer+", your input is "+input+", you answer is "+hit,Toast.LENGTH_LONG).show();
+            Toast.makeText(this.getApplicationContext(), "answer is " + this.answer + ", your input is " + input + ", you answer is " + hit, Toast.LENGTH_LONG).show();
 
-        if(hit=="correct"){
-            Intent passEndGame = new Intent(this,EndGame.class);
-            startActivity(passEndGame);
-            finish();
+            if (hit == "correct") {
+                Intent passEndGame = new Intent(this, EndGame.class);
+                startActivity(passEndGame);
+                finish();
+            }
+        }else {
+            Toast.makeText(this.getApplicationContext(), "YOU NEED TO INPUT A NUMBER",Toast.LENGTH_LONG).show();
         }
-
     }
 }
