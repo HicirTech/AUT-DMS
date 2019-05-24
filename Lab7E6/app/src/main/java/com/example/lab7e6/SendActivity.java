@@ -33,7 +33,6 @@ public class SendActivity extends Activity {
 
     private void requestPermission() {
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, REQUEST_CODE_ASK_PERMISSIONS);
-
     }
 
     @Override
