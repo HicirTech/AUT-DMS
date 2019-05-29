@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void isGPSEnabledButtonOnclick(View view) {
         if (this.locationManager != null) {
-            this.locationProvider = locationManager.getProvider(LocationManager.GPS_PROVIDER);
+            this.locationProvider = locationManager.getProvider(LocationManager.NETWORK_PROVIDER);
             Toast.makeText(this, locationProvider.getName()+" is now the location provider, "
                             + " GPS is enable: " + locationManager.isProviderEnabled(locationProvider.getName())
                             + " GPS Altitude support: " + this.locationProvider.supportsAltitude()
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             try {
-                locationManager.requestLocationUpdates(locationProvider.getName(), 5000, 1, new LocationListener() {
+                locationManager.requestLocationUpdates(locationProvider.getName(), 5000, 1000, new LocationListener() {
                     @Override
                     public void onLocationChanged(Location location) {
                         Toast.makeText(MainActivity.this, "Altitude :" + location.getAltitude() + System.getProperty("line.separator")
