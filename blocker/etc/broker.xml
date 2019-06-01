@@ -56,14 +56,14 @@ under the License.
       
       <!--
        This value was determined through a calculation.
-       Your system could perform 0.58 writes per millisecond
+       Your system could perform 0.34 writes per millisecond
        on the current journal configuration.
-       That translates as a sync write every 1728000 nanoseconds.
+       That translates as a sync write every 2960000 nanoseconds.
 
        Note: If you specify 0 the system will perform writes directly to the disk.
              We recommend this to be 0 if you are using journalType=MAPPED and journal-datasync=false.
       -->
-      <journal-buffer-timeout>1728000</journal-buffer-timeout>
+      <journal-buffer-timeout>2960000</journal-buffer-timeout>
 
 
       <!--

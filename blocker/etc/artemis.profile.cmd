@@ -16,7 +16,7 @@ rem KIND, either express or implied.  See the License for the
 rem specific language governing permissions and limitations
 rem under the License.
 
-set ARTEMIS_HOME="F:\apache-artemis-2.8.1"
+set ARTEMIS_HOME="C:\apache-artemis-2.8.1"
 set ARTEMIS_INSTANCE="C:\Users\luoze\Documents\GitHub\AUT-DMS\blocker"
 set ARTEMIS_DATA_DIR="C:\Users\luoze\Documents\GitHub\AUT-DMS\blocker\data"
 set ARTEMIS_ETC_DIR="C:\Users\luoze\Documents\GitHub\AUT-DMS\blocker\etc"

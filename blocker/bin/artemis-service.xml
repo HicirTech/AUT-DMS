@@ -22,7 +22,7 @@
    <name>ActiveMQ Artemis: blocker @ 0.0.0.0</name>
    <description>Apache ActiveMQ Artemis is a reliable messaging broker</description>
 
-   <env name="ARTEMIS_HOME" value="F:\apache-artemis-2.8.1"/>
+   <env name="ARTEMIS_HOME" value="C:\apache-artemis-2.8.1"/>
    <env name="ARTEMIS_INSTANCE" value="C:\Users\luoze\Documents\GitHub\AUT-DMS\blocker"/>
    <env name="ARTEMIS_INSTANCE_ETC" value="C:\Users\luoze\Documents\GitHub\AUT-DMS\blocker\etc"/>
    <env name="ARTEMIS_INSTANCE_URI" value="file:/C:/Users/luoze/Documents/GitHub/AUT-DMS/blocker/"/>
