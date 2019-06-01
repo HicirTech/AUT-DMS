@@ -1,0 +1,41 @@
+2019-06-01 13:47:34,145 INFO  [org.apache.activemq.artemis.integration.bootstrap] AMQ101000: Starting ActiveMQ Artemis Server
+2019-06-01 13:47:35,706 INFO  [org.apache.activemq.artemis.core.server] AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/large-messages,pagingDirectory=data/paging)
+2019-06-01 13:47:35,739 INFO  [org.apache.activemq.artemis.core.server] AMQ221013: Using NIO Journal
+2019-06-01 13:47:35,778 INFO  [org.apache.activemq.artemis.core.server] AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 536,870,912
+2019-06-01 13:47:35,808 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-06-01 13:47:35,809 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2019-06-01 13:47:35,811 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2019-06-01 13:47:35,811 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-mqtt-protocol]. Adding protocol support for: MQTT
+2019-06-01 13:47:35,812 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-openwire-protocol]. Adding protocol support for: OPENWIRE
+2019-06-01 13:47:35,813 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2019-06-01 13:47:35,881 INFO  [org.apache.activemq.artemis.core.server] AMQ221034: Waiting indefinitely to obtain live lock
+2019-06-01 13:47:35,881 INFO  [org.apache.activemq.artemis.core.server] AMQ221035: Live Server Obtained live lock
+2019-06-01 13:47:36,034 INFO  [org.apache.activemq.artemis.core.server] AMQ221080: Deploying address DLQ supporting [ANYCAST]
+2019-06-01 13:47:36,048 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying ANYCAST queue DLQ on address DLQ
+2019-06-01 13:47:36,108 INFO  [org.apache.activemq.artemis.core.server] AMQ221080: Deploying address ExpiryQueue supporting [ANYCAST]
+2019-06-01 13:47:36,110 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying ANYCAST queue ExpiryQueue on address ExpiryQueue
+2019-06-01 13:47:37,699 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:61616 for protocols [CORE,MQTT,AMQP,STOMP,HORNETQ,OPENWIRE]
+2019-06-01 13:47:37,725 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:5445 for protocols [HORNETQ,STOMP]
+2019-06-01 13:47:37,752 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:5672 for protocols [AMQP]
+2019-06-01 13:47:37,777 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:1883 for protocols [MQTT]
+2019-06-01 13:47:37,800 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:61613 for protocols [STOMP]
+2019-06-01 13:47:37,813 INFO  [org.apache.activemq.artemis.core.server] AMQ221007: Server is now live
+2019-06-01 13:47:37,813 INFO  [org.apache.activemq.artemis.core.server] AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.8.1 [0.0.0.0, nodeID=3ac5d420-840f-11e9-9f6c-00155de7345e] 
+2019-06-01 13:47:38,315 INFO  [org.apache.activemq.hawtio.branding.PluginContextListener] Initialized activemq-branding plugin
+2019-06-01 13:47:38,748 INFO  [org.apache.activemq.hawtio.plugin.PluginContextListener] Initialized artemis-plugin plugin
+2019-06-01 13:47:46,657 INFO  [io.hawt.HawtioContextListener] Initialising hawtio services
+2019-06-01 13:47:46,706 INFO  [io.hawt.system.ConfigManager] Configuration will be discovered via system properties
+2019-06-01 13:47:46,715 INFO  [io.hawt.jmx.JmxTreeWatcher] Welcome to hawtio 1.5.5 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-)
+2019-06-01 13:47:46,726 INFO  [io.hawt.jmx.UploadManager] Using file upload directory: C:\Users\luoze\Documents\GitHub\AUT-DMS\blocker\tmp\uploads
+2019-06-01 13:47:46,808 INFO  [io.hawt.web.AuthenticationFilter] Starting hawtio authentication filter, JAAS realm: "activemq" authorized role(s): "amq" role principal classes: "org.apache.activemq.artemis.spi.core.security.jaas.RolePrincipal"
+2019-06-01 13:47:46,982 INFO  [io.hawt.web.JolokiaConfiguredAgentServlet] Jolokia overridden property: [key=policyLocation, value=file:/C:/Users/luoze/Documents/GitHub/AUT-DMS/blocker/etc/\jolokia-access.xml]
+2019-06-01 13:47:47,723 INFO  [io.hawt.web.RBACMBeanInvoker] Using MBean [hawtio:type=security,area=jmx,rank=0,name=HawtioDummyJMXSecurity] for role based access control
+2019-06-01 13:47:49,393 INFO  [io.hawt.system.ProxyWhitelist] Initial proxy whitelist: [localhost, 127.0.0.1, 192.168.65.241, DESKTOP-TFA0SL3.mshome.net, 192.168.42.171, DESKTOP-TFA0SL3]
+2019-06-01 13:47:50,774 INFO  [org.apache.activemq.artemis] AMQ241001: HTTP Server started at http://localhost:8161
+2019-06-01 13:47:50,774 INFO  [org.apache.activemq.artemis] AMQ241002: Artemis Jolokia REST API available at http://localhost:8161/console/jolokia
+2019-06-01 13:47:50,775 INFO  [org.apache.activemq.artemis] AMQ241004: Artemis Console available at http://localhost:8161/console
+2019-06-01 13:53:01,783 INFO  [io.hawt.web.AuthenticationFilter] Destroying hawtio authentication filter
+2019-06-01 13:53:01,785 INFO  [io.hawt.HawtioContextListener] Destroying hawtio services
+2019-06-01 13:53:02,872 INFO  [org.apache.activemq.hawtio.plugin.PluginContextListener] Destroyed artemis-plugin plugin
+2019-06-01 13:53:02,938 INFO  [org.apache.activemq.hawtio.branding.PluginContextListener] Destroyed activemq-branding plugin
+2019-06-01 13:53:02,996 INFO  [org.apache.activemq.artemis.core.server] AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.8.1 [3ac5d420-840f-11e9-9f6c-00155de7345e] stopped, uptime 5 minutes
