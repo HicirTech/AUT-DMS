@@ -680,3 +680,18 @@ java.lang.Exception: File not found: C:\Users\luoze\Documents\GitHub\AUT-DMS\Tes
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:41.510
 !MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 17:33:43.108
+!MESSAGE Preparing classpath changed notification JMS_V2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 17:33:43.114
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 17:33:43.122
+!MESSAGE classpath=25 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 17:33:43.126
+!MESSAGE executing callback sts4.classpath.orCRMKab JMS_V2 false 25
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 17:33:43.137
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]

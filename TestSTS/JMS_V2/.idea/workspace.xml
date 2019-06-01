@@ -2,67 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca624066-91cd-48a9-87d5-f1811a2bc87b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Reciver_V1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sender_V1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.idea/libraries/Maven__org_apache_activemq_artemis_jms_client_all_2_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.idea/libraries/Maven__org_apache_activemq_artemis_jms_client_all_2_8_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/src/main/java/com/testing/test2/QueueBrowse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/src/main/java/com/testing/test2/QueueBrowse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/src/main/java/com/testing/test2/QueueReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/src/main/java/com/testing/test2/QueueReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/src/main/java/com/testing/test2/TopicReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/src/main/java/com/testing/test2/TopicReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/src/main/resources/jndi.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/src/main/resources/jndi.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/target/classes/META-INF/maven/com.testing/test2/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/target/classes/META-INF/maven/com.testing/test2/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/target/classes/META-INF/maven/com.testing/test2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/target/classes/META-INF/maven/com.testing/test2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/target/classes/com/testing/test2/QueueBrowse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/target/classes/com/testing/test2/QueueBrowse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/target/classes/com/testing/test2/QueueReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/target/classes/com/testing/test2/QueueReceiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/target/classes/com/testing/test2/TopicReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/target/classes/com/testing/test2/TopicReceiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/target/classes/jndi.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/target/classes/jndi.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver/test2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/Reciver_V1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reciver_V1/target/classes/META-INF/test2.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reciver_V1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/src/main/java/com/test/FirstQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/src/main/java/com/test/FirstQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/src/main/java/com/test/FirstTopic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/src/main/java/com/test/FirstTopic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/src/main/resources/jndi.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/src/main/resources/jndi.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/target/classes/META-INF/maven/com.testing/test/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/target/classes/META-INF/maven/com.testing/test/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/target/classes/META-INF/maven/com.testing/test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/target/classes/META-INF/maven/com.testing/test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/target/classes/com/test/FirstQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/target/classes/com/test/FirstQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/target/classes/com/test/FirstTopic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/target/classes/com/test/FirstTopic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sender/target/classes/jndi.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Sender_V1/target/classes/jndi.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testing/JMSV2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testing/JMSV2/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jndi.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jndi.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testing/JMSV2/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testing/JMSV2/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../blocker/data/bindings/activemq-bindings-1.bindings" beforeDir="false" afterPath="$PROJECT_DIR$/../../blocker/data/bindings/activemq-bindings-1.bindings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../blocker/data/bindings/activemq-bindings-2.bindings" beforeDir="false" afterPath="$PROJECT_DIR$/../../blocker/data/bindings/activemq-bindings-2.bindings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../blocker/data/journal/activemq-data-1.amq" beforeDir="false" afterPath="$PROJECT_DIR$/../../blocker/data/journal/activemq-data-1.amq" afterDir="false" />
@@ -87,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/testing/JMSV2/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="26" selection-start-line="25" selection-end-line="26" />
+            <state relative-caret-position="638">
+              <caret line="53" column="8" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,16 +168,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559364802417</updated>
-      <workItem from="1559364805628" duration="1649000" />
+      <workItem from="1559364805628" duration="4291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1649000" />
+    <option name="totallyTimeSpent" value="4291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="110" y="20" width="1400" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -244,7 +193,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32988507" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32988507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -266,8 +215,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/testing/JMSV2/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="26" selection-start-line="25" selection-end-line="26" />
+        <state relative-caret-position="638">
+          <caret line="53" column="8" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
