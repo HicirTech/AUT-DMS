@@ -509,3 +509,174 @@ java.lang.Exception: File not found: C:\Users\luoze\Documents\GitHub\AUT-DMS\Tes
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:34.824
+!MESSAGE Preparing classpath changed notification Reciver
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:34.831
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:34.840
+!MESSAGE executing callback sts4.classpath.orCRMKab Reciver true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:34.855
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:34.863
+!MESSAGE Preparing classpath changed notification Reciver_V1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:34.869
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:34.876
+!MESSAGE classpath=23 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:34.883
+!MESSAGE executing callback sts4.classpath.orCRMKab Reciver_V1 false 23
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:35.373
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:35.977
+!MESSAGE Preparing classpath changed notification Reciver_V1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:35.984
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:35.991
+!MESSAGE classpath=24 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:35.996
+!MESSAGE executing callback sts4.classpath.orCRMKab Reciver_V1 false 24
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:36.006
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:39.259
+!MESSAGE Preparing classpath changed notification Sender
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:39.267
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:39.274
+!MESSAGE executing callback sts4.classpath.orCRMKab Sender true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:39.640
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:39.647
+!MESSAGE Preparing classpath changed notification Sender_V1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:39.652
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:39.660
+!MESSAGE classpath=23 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:39.668
+!MESSAGE executing callback sts4.classpath.orCRMKab Sender_V1 false 23
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:39.676
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:40.154
+!MESSAGE Preparing classpath changed notification Sender_V1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:40.165
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:40.175
+!MESSAGE classpath=24 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:40.183
+!MESSAGE executing callback sts4.classpath.orCRMKab Sender_V1 false 24
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:49:40.194
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:50:55.314
+!MESSAGE Preparing classpath changed notification JMSV2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:50:55.321
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:50:55.328
+!MESSAGE classpath=23 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:50:55.333
+!MESSAGE executing callback sts4.classpath.orCRMKab JMSV2 false 23
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:50:55.345
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:03.464
+!MESSAGE Preparing classpath changed notification JMSV2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:03.470
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:03.475
+!MESSAGE executing callback sts4.classpath.orCRMKab JMSV2 true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:03.484
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:03.490
+!MESSAGE Preparing classpath changed notification JMS_V2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:03.496
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:03.507
+!MESSAGE classpath=22 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:03.512
+!MESSAGE executing callback sts4.classpath.orCRMKab JMS_V2 false 22
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:03.652
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:04.012
+!MESSAGE Preparing classpath changed notification JMS_V2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:04.018
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:04.025
+!MESSAGE classpath=23 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:04.030
+!MESSAGE executing callback sts4.classpath.orCRMKab JMS_V2 false 23
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:04.037
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:24.436
+!MESSAGE Preparing classpath changed notification JMS_V2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:24.442
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:24.448
+!MESSAGE classpath=24 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:24.453
+!MESSAGE executing callback sts4.classpath.orCRMKab JMS_V2 false 24
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:24.460
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:41.476
+!MESSAGE Preparing classpath changed notification JMS_V2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:41.482
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:41.492
+!MESSAGE classpath=25 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:41.499
+!MESSAGE executing callback sts4.classpath.orCRMKab JMS_V2 false 25
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-01 16:51:41.510
+!MESSAGE executing callback sts4.classpath.orCRMKab SUCCESS [done]

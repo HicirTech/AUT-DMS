@@ -9,3 +9,10 @@
 /Assignment2-R1/Assignment2-R1-war/dist/
 /blocker
 /blocker/*
+blocker/data/bindings/activemq-bindings-2.bindings
+blocker/data/bindings/activemq-bindings-2.bindings
+blocker/data/journal/activemq-data-2.amq
+blocker/data/journal/server.lock
+TestSTS/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+TestSTS/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+TestSTS/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi

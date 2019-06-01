@@ -362,3 +362,73 @@
 2019-06-01 16:38:37,116 [Worker-77: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-06-01 16:38:37,117 [Worker-77: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-06-01 16:38:37,117 [Worker-77: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\Sender\src\test\resources
+2019-06-01 16:49:30,169 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:30,170 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-01 16:49:30,170 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:30,171 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\Reciver\src\test\resources
+2019-06-01 16:49:30,176 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:30,181 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-01 16:49:30,182 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:30,189 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\Sender\src\test\resources
+2019-06-01 16:49:35,731 [Worker-76: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.testing:test2:0.0.1-SNAPSHOT @ C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\Reciver_V1\pom.xml.
+2019-06-01 16:49:35,936 [Worker-76: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:35,943 [Worker-76: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-01 16:49:35,949 [Worker-76: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:35,950 [Worker-76: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\Reciver_V1\src\test\resources
+2019-06-01 16:49:39,868 [Worker-84: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:39,870 [Worker-84: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-01 16:49:39,871 [Worker-84: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:39,872 [Worker-84: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\Reciver_V1\src\test\resources
+2019-06-01 16:49:40,006 [Worker-84: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.testing:test:0.0.1-SNAPSHOT @ C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\Sender_V1\pom.xml.
+2019-06-01 16:49:40,109 [Worker-84: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:40,114 [Worker-84: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-01 16:49:40,120 [Worker-84: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:40,125 [Worker-84: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\Sender_V1\src\test\resources
+2019-06-01 16:49:41,213 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:41,213 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-01 16:49:41,214 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:49:41,218 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\Sender_V1\src\test\resources
+2019-06-01 16:50:54,965 [Worker-79: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMSV2\pom.xml
+2019-06-01 16:50:55,081 [Worker-79: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.testing:JMSV2:0.0.1-SNAPSHOT @ C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMSV2\pom.xml.
+2019-06-01 16:50:55,204 [Worker-79: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JMSV2/src/main/java
+2019-06-01 16:50:55,214 [Worker-79: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JMSV2/src/test/java
+2019-06-01 16:50:55,306 [Worker-79: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2019-06-01 16:50:55,587 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:50:55,587 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMSV2\src\main\resources
+2019-06-01 16:50:55,593 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:50:55,593 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMSV2\src\test\resources
+2019-06-01 16:51:03,865 [Worker-86: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.testing:JMSV2:0.0.1-SNAPSHOT @ C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\pom.xml.
+2019-06-01 16:51:03,971 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:03,975 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\main\resources
+2019-06-01 16:51:03,980 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:03,984 [Worker-86: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\test\resources
+2019-06-01 16:51:05,189 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:05,194 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\main\resources
+2019-06-01 16:51:05,199 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:05,205 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\test\resources
+2019-06-01 16:51:24,284 [Worker-81: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.testing:JMSV2:0.0.1-SNAPSHOT @ C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\pom.xml.
+2019-06-01 16:51:24,401 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:24,408 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\main\resources
+2019-06-01 16:51:24,413 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:24,413 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\test\resources
+2019-06-01 16:51:25,557 [Worker-79: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:25,557 [Worker-79: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\main\resources
+2019-06-01 16:51:25,558 [Worker-79: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:25,558 [Worker-79: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\test\resources
+2019-06-01 16:51:41,661 [Worker-79: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:41,665 [Worker-79: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-01 16:51:41,670 [Worker-79: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:41,671 [Worker-79: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\test\resources
+2019-06-01 16:51:46,471 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:46,471 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-01 16:51:46,472 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:51:46,472 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\test\resources
+2019-06-01 16:54:30,138 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:54:30,138 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-01 16:54:30,144 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:54:30,144 [Worker-81: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\test\resources
+2019-06-01 16:59:30,291 [Worker-90: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.testing:JMSV2:0.0.1-SNAPSHOT @ C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\pom.xml.
+2019-06-01 16:59:30,454 [Worker-90: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:59:30,455 [Worker-90: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-01 16:59:30,456 [Worker-90: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-01 16:59:30,460 [Worker-90: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\luoze\Documents\GitHub\AUT-DMS\TestSTS\JMS_V2\src\test\resources
