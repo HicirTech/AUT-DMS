@@ -19,9 +19,18 @@ public class FirstQueue {
             MessageProducer producer =  session.createProducer(queue);
 
 
-            TextMessage message  = session.createTextMessage("I am creator of my destiny");
+//            TextMessage message  = session.createTextMessage("UserDB-Insert-RName-RPass-Radmin-Rbio-RPaper");
+//            producer.send(message);
+//            System.out.println("POST:sent");
+//            message  = session.createTextMessage("UserDB-Find-RName");
+//            producer.send(message);
+//            message  = session.createTextMessage("UserDB-Find-RName");
+//            producer.send(message);
+//            message  = session.createTextMessage("UserDB-View");
+//            producer.send(message);
+            TextMessage message  = session.createTextMessage("Action-Announce");
             producer.send(message);
-            System.out.println("POST:sent");
+            
         }
         catch (NamingException e){
                 e.printStackTrace();
