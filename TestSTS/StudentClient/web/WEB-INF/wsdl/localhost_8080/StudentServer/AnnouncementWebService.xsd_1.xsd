@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://WebServicePackage/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebServicePackage/">
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="addAnnouncement" type="tns:addAnnouncement"/>
+
+<xs:element name="addAnnouncementResponse" type="tns:addAnnouncementResponse"/>
+
+<xs:element name="getAnnouncementList" type="tns:getAnnouncementList"/>
+
+<xs:element name="getAnnouncementListResponse" type="tns:getAnnouncementListResponse"/>
+
+<xs:element name="initAnnouncement" type="tns:initAnnouncement"/>
+
+<xs:element name="initAnnouncementResponse" type="tns:initAnnouncementResponse"/>
+
+<xs:element name="makeAnnouncementObject" type="tns:makeAnnouncementObject"/>
+
+<xs:element name="makeAnnouncementObjectResponse" type="tns:makeAnnouncementObjectResponse"/>
+
+<xs:element name="selectAllAnnouncementDB" type="tns:selectAllAnnouncementDB"/>
+
+<xs:element name="selectAllAnnouncementDBResponse" type="tns:selectAllAnnouncementDBResponse"/>
+
+<xs:complexType name="makeAnnouncementObject">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="makeAnnouncementObjectResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:announcement" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="announcement">
+<xs:sequence>
+<xs:element name="announcementID" type="xs:int"/>
+<xs:element name="body" type="xs:string" minOccurs="0"/>
+<xs:element name="target" type="xs:string" minOccurs="0"/>
+<xs:element name="topic" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAnnouncementList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAnnouncementListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:announcement" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="initAnnouncement">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="initAnnouncementResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addAnnouncement">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addAnnouncementResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectAllAnnouncementDB">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="selectAllAnnouncementDBResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:announcement" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

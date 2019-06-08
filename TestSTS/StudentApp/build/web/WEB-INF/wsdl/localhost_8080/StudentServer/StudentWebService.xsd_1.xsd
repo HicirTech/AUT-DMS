@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://WebServicePackage/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebServicePackage/">
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="JAXBException" type="tns:JAXBException"/>
+
+<xs:element name="addStudent" type="tns:addStudent"/>
+
+<xs:element name="addStudentResponse" type="tns:addStudentResponse"/>
+
+<xs:element name="announceDecode" type="tns:announceDecode"/>
+
+<xs:element name="announceDecodeResponse" type="tns:announceDecodeResponse"/>
+
+<xs:element name="changePassword" type="tns:changePassword"/>
+
+<xs:element name="changePasswordResponse" type="tns:changePasswordResponse"/>
+
+<xs:element name="checkPassword" type="tns:checkPassword"/>
+
+<xs:element name="checkPasswordResponse" type="tns:checkPasswordResponse"/>
+
+<xs:element name="getAnnounce" type="tns:getAnnounce"/>
+
+<xs:element name="getAnnounceResponse" type="tns:getAnnounceResponse"/>
+
+<xs:element name="getStudentInformation" type="tns:getStudentInformation"/>
+
+<xs:element name="getStudentInformationResponse" type="tns:getStudentInformationResponse"/>
+
+<xs:element name="getStudentList" type="tns:getStudentList"/>
+
+<xs:element name="getStudentListResponse" type="tns:getStudentListResponse"/>
+
+<xs:element name="initList" type="tns:initList"/>
+
+<xs:element name="initListResponse" type="tns:initListResponse"/>
+
+<xs:element name="makeStudent" type="tns:makeStudent"/>
+
+<xs:element name="makeStudentResponse" type="tns:makeStudentResponse"/>
+
+<xs:element name="sentMessageToAnnounce" type="tns:sentMessageToAnnounce"/>
+
+<xs:element name="sentMessageToAnnounceResponse" type="tns:sentMessageToAnnounceResponse"/>
+
+<xs:element name="sentMessageToAnnounceWithTarget" type="tns:sentMessageToAnnounceWithTarget"/>
+
+<xs:element name="sentMessageToAnnounceWithTargetResponse" type="tns:sentMessageToAnnounceWithTargetResponse"/>
+
+<xs:element name="student" type="tns:student"/>
+
+<xs:element name="unMarshallStudentObject" type="tns:unMarshallStudentObject"/>
+
+<xs:element name="unMarshallStudentObjectResponse" type="tns:unMarshallStudentObjectResponse"/>
+
+<xs:complexType name="checkPassword">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkPasswordResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sentMessageToAnnounce">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sentMessageToAnnounceResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getStudentList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getStudentListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="student">
+<xs:sequence>
+<xs:element name="studentID" type="xs:int"/>
+<xs:element name="studentName" type="xs:string" minOccurs="0"/>
+<xs:element name="age" type="xs:int"/>
+<xs:element name="gender" type="tns:gender" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sentMessageToAnnounceWithTarget">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sentMessageToAnnounceWithTargetResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="initList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="initListResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addStudent">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="makeStudent">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="makeStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="changePassword">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="changePasswordResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStudentInformation">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStudentInformationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAnnounce">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAnnounceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unMarshallStudentObject">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unMarshallStudentObjectResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="JAXBException">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="linkedException" type="tns:throwable" minOccurs="0"/>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="throwable">
+<xs:sequence>
+<xs:element name="stackTrace" type="tns:stackTraceElement" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="stackTraceElement" final="extension restriction">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="announceDecode">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="announceDecodeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="gender">
+<xs:restriction base="xs:string">
+<xs:enumeration value="Male"/>
+<xs:enumeration value="Female"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

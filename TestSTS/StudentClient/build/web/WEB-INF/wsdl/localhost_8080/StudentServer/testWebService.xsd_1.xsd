@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://WebServicePackage/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebServicePackage/">
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="addStudent" type="tns:addStudent"/>
+
+<xs:element name="addStudentResponse" type="tns:addStudentResponse"/>
+
+<xs:element name="getStudentList" type="tns:getStudentList"/>
+
+<xs:element name="getStudentListResponse" type="tns:getStudentListResponse"/>
+
+<xs:element name="initList" type="tns:initList"/>
+
+<xs:element name="initListResponse" type="tns:initListResponse"/>
+
+<xs:element name="makeStudent" type="tns:makeStudent"/>
+
+<xs:element name="makeStudentResponse" type="tns:makeStudentResponse"/>
+
+<xs:complexType name="initList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="initListResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addStudent">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="makeStudent">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="makeStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="student">
+<xs:sequence>
+<xs:element name="age" type="xs:int"/>
+<xs:element name="gender" type="tns:gender" minOccurs="0"/>
+<xs:element name="studentID" type="xs:int"/>
+<xs:element name="studentName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStudentList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getStudentListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="gender">
+<xs:restriction base="xs:string">
+<xs:enumeration value="Male"/>
+<xs:enumeration value="Female"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

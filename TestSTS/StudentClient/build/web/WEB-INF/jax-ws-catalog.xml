@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/StudentServer/HelloWSService?wsdl" uri="wsdl/localhost_8080/StudentServer/HelloWSService.wsdl"/>
+    <system systemId="http://localhost:8080/StudentServer/HelloWSService?xsd=1" uri="wsdl/localhost_8080/StudentServer/HelloWSService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/StudentBeanWebService/StudentBeanWebService?wsdl" uri="wsdl/localhost_8080/StudentBeanWebService/StudentBeanWebService.wsdl"/>
+    <system systemId="http://localhost:8080/StudentBeanWebService/StudentBeanWebService?xsd=1" uri="wsdl/localhost_8080/StudentBeanWebService/StudentBeanWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/StudentServer/StudentBeanWebService?wsdl" uri="wsdl/localhost_8080/StudentServer/StudentBeanWebService.wsdl"/>
+    <system systemId="http://localhost:8080/StudentServer/StudentBeanWebService?xsd=1" uri="wsdl/localhost_8080/StudentServer/StudentBeanWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/StudentServer/testWebService?wsdl" uri="wsdl/localhost_8080/StudentServer/testWebService.wsdl"/>
+    <system systemId="http://localhost:8080/StudentServer/testWebService?xsd=1" uri="wsdl/localhost_8080/StudentServer/testWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/StudentServer/StudentWebService?wsdl" uri="wsdl/localhost_8080/StudentServer/StudentWebService.wsdl"/>
+    <system systemId="http://localhost:8080/StudentServer/StudentWebService?xsd=1" uri="wsdl/localhost_8080/StudentServer/StudentWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/StudentServer/AnnouncementWebService?wsdl" uri="wsdl/localhost_8080/StudentServer/AnnouncementWebService.wsdl"/>
+    <system systemId="http://localhost:8080/StudentServer/AnnouncementWebService?xsd=1" uri="wsdl/localhost_8080/StudentServer/AnnouncementWebService.xsd_1.xsd"/>
+</catalog>
